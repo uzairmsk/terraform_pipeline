@@ -1,4 +1,4 @@
-provider "google-beta" {
+provider "google" {
   project="agile-polymer-364709"
   region="us-east1"
   zone="us-east1-b"
