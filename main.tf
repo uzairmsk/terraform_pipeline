@@ -1,4 +1,7 @@
 provider "google-beta" {
+  project="agile-polymer-364709"
+  region="us-east1"
+  zone="us-east1-b"
 }
 
 resource "google_compute_subnetwork" "network-with-private-secondary-ip-ranges" {
