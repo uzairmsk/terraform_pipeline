@@ -16,3 +16,7 @@ resource "google_compute_subnetwork" "network-with-private-secondary-ip-ranges" 
   region        = "us-central1"
   network       = "vpc-network-terraform"
 }
+resource "google_service_account" "service_account" {
+  account_id   = "uzair_shaikh_account2"
+  display_name = "Uzair Account 2"
+}
