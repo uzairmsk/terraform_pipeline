@@ -12,7 +12,7 @@ resource "google_compute_network" "vpc_network" {
 }
 resource "google_compute_subnetwork" "network-with-private-secondary-ip-ranges" {
   name          = "terraform-subnetwork"
-  ip_cidr_range = "10.0.6.0/16"
+  ip_cidr_range = "10.1.0.0/16"
   region        = "us-central1"
   network       = "vpc-network-terraform"
 }
