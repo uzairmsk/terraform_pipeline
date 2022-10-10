@@ -10,3 +10,9 @@ resource "google_compute_network" "vpc_network" {
   auto_create_subnetworks = false
   mtu                     = 1460
 }
+resource "google_compute_subnetwork" "network-with-private-secondary-ip-ranges" {
+  name          = "terraform-subnetwork"
+  ip_cidr_range = "10.0.6.0/16"
+  region        = "us-central1"
+  network       = "vpc-network-terraform"
+}
