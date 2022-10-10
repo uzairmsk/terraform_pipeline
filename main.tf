@@ -17,6 +17,6 @@ resource "google_compute_subnetwork" "network-with-private-secondary-ip-ranges" 
   network       = "vpc-network-terraform"
 }
 resource "google_service_account" "service_account" {
-  account_id   = "uzair_shaikh_account2"
+  account_id   = "uzair-shaikh2@agile-polymer-364709.iam.gserviceaccount.com"
   display_name = "Uzair Account 2"
 }
